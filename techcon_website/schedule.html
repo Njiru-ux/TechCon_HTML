@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule for TechCon 2024 - Event Timetable</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background-color: #1a237e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+        
+        nav {
+            margin-top: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 8px 16px;
+            background-color: #3949ab;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
+        nav a:hover {
+            background-color: #283593;
+        }
+        
+        nav a[href="schedule.html"] {
+            background-color: #283593;
+            font-weight: bold;
+        }
+        
+        main {
+            margin: 30px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        caption {
+            font-size: 1.4rem;
+            font-weight: bold;
+            padding: 20px;
+            background-color: #1a237e;
+            color: white;
+        }
+        
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        th {
+            background-color: #3949ab;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .time {
+            width: 15%;
+            font-weight: bold;
+            color: #1a237e;
+        }
+        
+        .session {
+            width: 55%;
+        }
+        
+        .speaker {
+            width: 30%;
+        }
+        
+        .track {
+            display: inline-block;
+            background-color: #e8eaf6;
+            color: #1a237e;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        
+        .ai-track { background-color: #e3f2fd; color: #1565c0; }
+        .web-track { background-color: #e8f5e9; color: #2e7d32; }
+        .cyber-track { background-color: #fce4ec; color: #c2185b; }
+        .future-track { background-color: #fff3e0; color: #ef6c00; }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a237e;
+            color: white;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px auto;
+                width: 80%;
+                max-width: 200px;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            th, td {
+                padding: 10px;
+            }
+            
+            .time, .session, .speaker {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Schedule for TechCon 2024</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <table>
+            <caption>Detailed Schedule of Events for TechCon 2024</caption>
+            <thead>
+                <tr>
+                    <th scope="col" class="time">Time</th>
+                    <th scope="col" class="session">Session</th>
+                    <th scope="col" class="speaker">Speaker</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time">8:00 AM - 9:00 AM</td>
+                    <td class="session">Registration & Welcome Breakfast
+                        <div class="track">General</div>
+                    </td>
+                    <td class="speaker">Conference Organizers</td>
+                </tr>
+                <tr>
+                    <td class="time">9:00 AM - 9:30 AM</td>
+                    <td class="session">Opening Keynote: The Future of Technology
+                        <div class="track">General</div>
+                    </td>
+                    <td class="speaker">Dr. Samantha Chen, MIT</td>
+                </tr>
+                <tr>
+                    <td class="time">9:45 AM - 10:45 AM</td>
+                    <td class="session">
+                        <strong>AI Track:</strong> Ethical AI Development
+                        <div class="track ai-track">AI & Machine Learning</div>
+                    </td>
+                    <td class="speaker">Dr. Marcus Johnson</td>
+                </tr>
+                <tr>
+                    <td class="time">9:45 AM - 10:45 AM</td>
+                    <td class="session">
+                        <strong>Web Track:</strong> Next-Gen Web Development
+                        <div class="track web-track">Web Technologies</div>
+                    </td>
+                    <td class="speaker">Sarah Rodriguez</td>
+                </tr>
+                <tr>
+                    <td class="time">11:00 AM - 12:00 PM</td>
+                    <td class="session">
+                        <strong>Cybersecurity Track:</strong> Zero Trust Architecture
+                        <div class="track cyber-track">Cybersecurity</div>
+                    </td>
+                    <td class="speaker">James K. Lee</td>
+                </tr>
+                <tr>
+                    <td class="time">11:00 AM - 12:00 PM</td>
+                    <td class="session">
+                        <strong>Future Tech Track:</strong> Quantum Computing Basics
+                        <div class="track future-track">Future Technologies</div>
+                    </td>
+                    <td class="speaker">Dr. Elena Martinez</td>
+                </tr>
+                <tr>
+                    <td class="time">12:00 PM - 1:30 PM</td>
+                    <td class="session">Lunch & Networking
+                        <div class="track">General</div>
+                    </td>
+                    <td class="speaker">All Attendees</td>
+                </tr>
+                <tr>
+                    <td class="time">1:30 PM - 2:30 PM</td>
+                    <td class="session">
+                        <strong>AI Track:</strong> Machine Learning in Healthcare
+                        <div class="track ai-track">AI & Machine Learning</div>
+                    </td>
+                    <td class="speaker">Dr. Priya Sharma</td>
+                </tr>
+                <tr>
+                    <td class="time">1:30 PM - 2:30 PM</td>
+                    <td class="session">
+                        <strong>Web Track:</strong> Progressive Web Apps
+                        <div class="track web-track">Web Technologies</div>
+                    </td>
+                    <td class="speaker">Michael Thompson</td>
+                </tr>
+                <tr>
+                    <td class="time">2:45 PM - 3:45 PM</td>
+                    <td class="session">
+                        <strong>Cybersecurity Track:</strong> Cloud Security Best Practices
+                        <div class="track cyber-track">Cybersecurity</div>
+                    </td>
+                    <td class="speaker">Robert Chen</td>
+                </tr>
+                <tr>
+                    <td class="time">2:45 PM - 3:45 PM</td>
+                    <td class="session">
+                        <strong>Future Tech Track:</strong> Sustainable Technology
+                        <div class="track future-track">Future Technologies</div>
+                    </td>
+                    <td class="speaker">Alexandra Williams</td>
+                </tr>
+                <tr>
+                    <td class="time">4:00 PM - 5:00 PM</td>
+                    <td class="session">Panel Discussion: The Next Decade of Tech
+                        <div class="track">General</div>
+                    </td>
+                    <td class="speaker">All Track Leaders</td>
+                </tr>
+                <tr>
+                    <td class="time">5:00 PM - 5:30 PM</td>
+                    <td class="session">Closing Remarks & Awards
+                        <div class="track">General</div>
+                    </td>
+                    <td class="speaker">Conference Chair</td>
+                </tr>
+                <tr>
+                    <td class="time">6:00 PM - 8:00 PM</td>
+                    <td class="session">Networking Reception
+                        <div class="track">General</div>
+                    </td>
+                    <td class="speaker">All Attendees</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 TechCon 2024. All rights reserved.</p>
+    </footer>
+</body>
+</html>
