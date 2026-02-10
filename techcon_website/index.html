@@ -3,349 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechCon 2024 - The Future of Technology Conference</title>
-    <meta name="description" content="Join us at TechCon 2024 - the premier technology conference exploring the latest innovations in AI, robotics, quantum computing, and more.">
+    <title>TechCon 2024 - Technology Conference</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
+        
         body {
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f5f7fa;
-        }
-
-        .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 20px;
         }
-
-        /* Header Styles */
+        
         header {
-            background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+            background-color: #1a237e;
             color: white;
-            padding: 1.5rem 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .header-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 20px;
             text-align: center;
+            margin-bottom: 30px;
         }
-
+        
         h1 {
-            font-size: 2.8rem;
-            margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
         }
-
-        .tagline {
-            font-size: 1.2rem;
-            font-weight: 300;
-            margin-bottom: 1.5rem;
-            opacity: 0.9;
-        }
-
-        /* Navigation Styles */
+        
         nav {
-            width: 100%;
-            margin-top: 1rem;
+            margin-top: 15px;
         }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
+        
         nav a {
             color: white;
             text-decoration: none;
-            padding: 0.7rem 1.5rem;
+            margin: 0 15px;
+            padding: 8px 16px;
+            background-color: #3949ab;
             border-radius: 4px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
         }
-
-        nav a:hover, nav a:focus {
-            background-color: rgba(255, 255, 255, 0.25);
-            transform: translateY(-2px);
-            outline: 2px solid white;
+        
+        nav a:hover {
+            background-color: #283593;
         }
-
-        /* Main Content Styles */
+        
         main {
-            padding: 3rem 0;
+            margin: 30px 0;
         }
-
-        .intro-section {
-            background-color: white;
-            border-radius: 10px;
-            padding: 2.5rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            margin-bottom: 3rem;
-        }
-
-        .section-title {
-            color: #1a237e;
-            font-size: 2.2rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 3px solid #3949ab;
-        }
-
-        .intro-text {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            line-height: 1.8;
-        }
-
-        .highlight {
-            color: #3949ab;
-            font-weight: 600;
-        }
-
-        /* Video Section Styles */
-        .video-section {
-            margin-top: 3rem;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
+        
+        section {
+            background-color: #f5f5f5;
+            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            background-color: #000;
+            margin-bottom: 30px;
         }
-
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .video-description {
-            margin-top: 1.5rem;
-            background-color: #f0f2f5;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #3949ab;
-        }
-
-        .video-description h3 {
+        
+        h2 {
             color: #1a237e;
-            margin-bottom: 0.8rem;
+            margin-bottom: 20px;
         }
-
-        /* Footer Styles */
+        
+        video {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
         footer {
-            background-color: #1a237e;
-            color: white;
             text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
-        }
-
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .copyright {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        /* Accessibility Features */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #3949ab;
-            color: white;
-            padding: 8px;
-            z-index: 100;
-            text-decoration: none;
-            border-radius: 0 0 4px 0;
-        }
-
-        .skip-link:focus {
-            top: 0;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            .section-title {
-                font-size: 1.8rem;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            nav a {
-                display: block;
-                width: 250px;
-                text-align: center;
-            }
-            
-            .intro-section {
-                padding: 1.5rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            .tagline {
-                font-size: 1rem;
-            }
-            
-            .container {
-                padding: 0 15px;
-            }
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin-top: 30px;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <!-- Skip link for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- Header Section -->
     <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>TechCon 2024</h1>
-                <p class="tagline">Shaping the Future of Technology</p>
-                
-                <!-- Navigation Menu -->
-                <nav aria-label="Main navigation">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="schedule.html">Schedule</a></li>
-                        <li><a href="register.html">Register</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        <h1>TechCon 2024</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <!-- Main Content Section -->
-    <main id="main-content">
-        <div class="container">
-            <!-- Conference Introduction Section -->
-            <section class="intro-section" aria-labelledby="conference-intro">
-                <h2 class="section-title" id="conference-intro">Welcome to TechCon 2024</h2>
-                
-                <div class="intro-text">
-                    <p>Join us for <span class="highlight">TechCon 2024</span>, the premier annual conference where technology leaders, innovators, and enthusiasts from around the world converge to explore the cutting edge of digital transformation.</p>
-                    
-                    <p>This year's conference will be held from <span class="highlight">October 15-18, 2024</span> at the San Francisco Convention Center. With over 300 speakers, 150+ sessions, and networking opportunities with 10,000+ attendees, TechCon 2024 promises to be our most impactful event yet.</p>
-                    
-                    <p>Our theme, <span class="highlight">"The Future is Now: Building Tomorrow's Technology Today"</span>, will guide discussions on artificial intelligence, quantum computing, sustainable technology, cybersecurity, and the ethical implications of rapid technological advancement.</p>
-                    
-                    <p>Whether you're a developer, entrepreneur, executive, or technology enthusiast, TechCon 2024 offers unparalleled opportunities to learn, connect, and be inspired by the leaders who are shaping our digital future.</p>
-                </div>
-            </section>
-
-            <!-- Promotional Video Section -->
-            <section class="video-section" aria-labelledby="promo-video">
-                <h2 class="section-title" id="promo-video">TechCon 2024 Preview</h2>
-                
-                <div class="video-container">
-                    <!-- Embedded promotional video with controls -->
-                    <video controls aria-describedby="video-description">
-                        <!-- Multiple video sources for better browser compatibility -->
-                        <source src="techcon-promo.mp4" type="video/mp4">
-                        <source src="techcon-promo.webm" type="video/webm">
-                        <!-- Fallback text if video doesn't load -->
-                        Your browser does not support the video tag. 
-                        <a href="techcon-promo.mp4">Download the TechCon 2024 promotional video</a>
-                    </video>
-                </div>
-                
-                <!-- Video description for accessibility -->
-                <div class="video-description" id="video-description">
-                    <h3>About This Video</h3>
-                    <p>This promotional video showcases highlights from previous TechCon conferences, featuring keynote speakers, interactive workshops, and networking events. You'll see glimpses of the innovative projects demonstrated at TechCon, interviews with past attendees, and a preview of what to expect at TechCon 2024. The video includes closed captions for accessibility.</p>
-                    <p><strong>Video length:</strong> 2 minutes 45 seconds</p>
-                </div>
-            </section>
-        </div>
+    <main>
+        <section>
+            <h2>Welcome to TechCon 2024</h2>
+            <p>TechCon 2024 is the premier annual conference for technology professionals, innovators, and enthusiasts. Join us from October 15-18, 2024 at the San Francisco Convention Center to explore the latest advancements in AI, quantum computing, cybersecurity, and sustainable technology.</p>
+            
+            <video controls width="100%">
+                <source src="techcon-promo.mp4" type="video/mp4">
+                <source src="techcon-promo.webm" type="video/webm">
+                Your browser does not support the video tag. Please <a href="techcon-promo.mp4">download the video</a> instead.
+            </video>
+            
+            <p><strong>Video Description:</strong> This promotional video provides an overview of TechCon 2024, featuring highlights from previous conferences, speaker interviews, and a preview of this year's sessions and workshops.</p>
+        </section>
     </main>
 
-    <!-- Footer Section -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p class="copyright">Copyright &copy; 2024 TechCon 2024. All rights reserved.</p>
-                <p>San Francisco Convention Center | October 15-18, 2024</p>
-            </div>
-        </div>
+        <p>Copyright &copy; 2024 TechCon 2024. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Simple script to enhance video accessibility
-        document.addEventListener('DOMContentLoaded', function() {
-            const video = document.querySelector('video');
-            
-            // Add keyboard event listener for better video controls
-            video.addEventListener('keydown', function(e) {
-                // Spacebar toggles play/pause
-                if (e.code === 'Space') {
-                    e.preventDefault();
-                    if (video.paused) {
-                        video.play();
-                    } else {
-                        video.pause();
-                    }
-                }
-                
-                // Arrow keys control seeking
-                if (e.code === 'ArrowRight') {
-                    video.currentTime += 5;
-                }
-                if (e.code === 'ArrowLeft') {
-                    video.currentTime -= 5;
-                }
-            });
-            
-            // Improve focus visibility for video controls
-            video.addEventListener('focus', function() {
-                this.style.outline = '3px solid #3949ab';
-                this.style.outlineOffset = '2px';
-            });
-            
-            video.addEventListener('blur', function() {
-                this.style.outline = 'none';
-            });
-        });
-    </script>
 </body>
 </html>
